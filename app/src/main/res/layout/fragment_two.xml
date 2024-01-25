@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@color/backGround_fagment2"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_weight="7"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <LinearLayout
+
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:paddingBottom="@dimen/padding_bottom_count_date"
+
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/year"
+                    android:textSize="@dimen/text_size_fragment2"
+                    android:textColor="@color/white"
+                    android:background="@drawable/icon_heart"
+                    android:gravity="center"
+                    android:layout_width="@dimen/size_text_count_date"
+                    android:layout_height="@dimen/size_text_count_date"/>
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/year"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:paddingBottom="@dimen/padding_bottom_count_date"
+
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:id="@+id/month"
+                    android:textSize="@dimen/text_size_fragment2"
+                    android:text="1"
+                    android:background="@drawable/icon_heart"
+                    android:gravity="center"
+                    android:layout_width="@dimen/size_text_count_date"
+                    android:layout_height="@dimen/size_text_count_date"/>
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/month"
+                     />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/white"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/week"
+                    android:textSize="@dimen/text_size_fragment2"
+                    android:text="123"
+                    android:paddingBottom="@dimen/padding_bottom_count_date"
+                    android:background="@drawable/icon_heart"
+                    android:gravity="center"
+                    android:layout_width="@dimen/size_text_count_date"
+                    android:layout_height="@dimen/size_text_count_date"/>
+
+                <TextView
+                    android:textColor="@color/white"
+
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/week"
+                     />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:paddingBottom="@dimen/padding_bottom_count_date"
+
+                    android:textColor="@color/white"
+                    android:id="@+id/date"
+                    android:textSize="@dimen/text_size_fragment2"
+                    android:text="1"
+                    android:layout_gravity="center"
+                    android:background="@drawable/icon_heart"
+                    android:gravity="center"
+                    android:layout_width="@dimen/size_text_count_date"
+                    android:layout_height="@dimen/size_text_count_date"/>
+
+                <TextView
+                    android:textColor="@color/white"
+
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date"
+                     />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:paddingBottom="@dimen/padding_bottom_count_date"
+
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:id="@+id/hour"
+                    android:textSize="@dimen/text_size_fragment2"
+                    android:text="1"
+                    android:background="@drawable/icon_heart"
+                    android:gravity="center"
+                    android:layout_width="@dimen/size_text_count_date"
+                    android:layout_height="@dimen/size_text_count_date"/>
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hour"
+                     />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:paddingBottom="@dimen/padding_bottom_count_date"
+
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:id="@+id/minute"
+                    android:textSize="@dimen/text_size_fragment2"
+                    android:text="1"
+                    android:background="@drawable/icon_heart"
+                    android:gravity="center"
+                    android:layout_width="@dimen/size_text_count_date"
+                    android:layout_height="@dimen/size_text_count_date"/>
+
+                <TextView
+                    android:textColor="@color/white"
+
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/minute"
+                     />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:paddingBottom="@dimen/padding_bottom_count_date"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:id="@+id/second"
+                    android:textSize="@dimen/text_size_fragment2"
+                    android:text="1"
+                    android:background="@drawable/icon_heart"
+                    android:gravity="center"
+                    android:layout_width="@dimen/size_text_count_date"
+                    android:layout_height="@dimen/size_text_count_date"/>
+
+                <TextView
+                    android:textColor="@color/white"
+
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/second"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin_top_date_fragment2"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/icon_heart2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+            <TextView
+                android:id="@+id/start_date"
+                android:textColor="@color/white"
+                android:layout_marginRight="@dimen/margin_left_right_text_date"
+                android:layout_marginLeft="@dimen/margin_left_right_text_date"
+                android:text="123/12312/1231"
+                android:textSize="@dimen/text_size_fragment2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:src="@drawable/icon_heart2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_dialog"
+    android:orientation="vertical">
+
+    <TextView
+
+        android:layout_marginTop="@dimen/size_margin_dialog_center"
+        android:textSize="@dimen/text_size_fragment2"
+        android:id="@+id/change_background_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/change_backgroung_user"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/size_margin_dialog_center"
+        android:textSize="@dimen/text_size_fragment2"
+        android:id="@+id/chang_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/change_name" />
+    <TextView
+
+        android:layout_marginTop="@dimen/size_margin_dialog_center"
+        android:textSize="@dimen/text_size_fragment2"
+        android:id="@+id/change_birthday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/change_birthday"
+        />
+    <TextView
+        android:layout_marginTop="@dimen/size_margin_dialog_center"
+        android:textSize="@dimen/text_size_fragment2"
+        android:id="@+id/change_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/change_sex"/>
+    <TextView
+
+        android:layout_marginTop="@dimen/size_margin_dialog_center"
+        android:textSize="@dimen/text_size_fragment2"
+        android:id="@+id/change_mask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/change_mask"/>
+    <TextView
+        android:layout_marginTop="@dimen/size_margin_dialog_center"
+        android:textSize="@dimen/text_size_fragment2"
+        android:id="@+id/change_color_background_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/change_color_background_sex"/>
+
+</LinearLayout>

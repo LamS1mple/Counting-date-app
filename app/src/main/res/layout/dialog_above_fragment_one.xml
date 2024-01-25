@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:padding="@dimen/padding_dialog"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/changedate"
+            android:layout_marginTop="@dimen/size_margin_dialog_center"
+            android:textSize="@dimen/text_size_fragment2"
+            android:text="@string/changeDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginTop="@dimen/size_margin_dialog_center"
+            android:textSize="@dimen/text_size_fragment2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/changeTitleAbove"
+            android:id="@+id/changeTitleAbove"/>
+        <TextView
+            android:layout_marginTop="@dimen/size_margin_dialog_center"
+            android:textSize="@dimen/text_size_fragment2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/changeTitleBottom"
+            android:id="@+id/changeTitleBottom"/>
+        <TextView
+
+            android:layout_marginTop="@dimen/size_margin_dialog_center"
+            android:textSize="@dimen/text_size_fragment2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/changeBackground"
+            android:id="@+id/changeBackground"/>
+        <TextView
+            android:layout_marginTop="@dimen/size_margin_dialog_center"
+            android:textSize="@dimen/text_size_fragment2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/changIcon"
+            android:id="@+id/changeIconCenter"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

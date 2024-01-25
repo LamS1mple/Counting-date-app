@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    >
+
+    <ImageView
+        android:id="@+id/backGroundAc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backGround_color" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_page2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view_page2_bottom"
+        android:layout_marginTop="@dimen/padding_top_viewpage" />
+    <com.scwang.wave.MultiWaveHeader
+        android:id="@+id/waveHeader"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleY="-1"
+        app:mwhCloseColor="@color/wave"
+        app:mwhColorAlpha="0.6"
+        android:layout_alignParentBottom="true"
+        app:mwhGradientAngle="45"
+        app:mwhProgress="1"
+        app:mwhStartColor="@color/wave"
+        app:mwhVelocity="2"
+        app:mwhWaveHeight="50dp"
+        app:mwhWaves="PairWave" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_page2_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="20dp" />
+
+
+</RelativeLayout>

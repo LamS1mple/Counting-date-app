@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_dialog">20dp</dimen>
+    <dimen name="text_size_fragment2">17sp</dimen>
+    <dimen name="size_margin_dialog_center">15dp</dimen>
+    <dimen name="padding_top_viewpage">50dp</dimen>
+    <dimen name="size_img">100dp</dimen>
+    <dimen name="padding_left_edit_text">10dp</dimen>
+    <dimen name="size_text_count_date">43dp</dimen>
+    <dimen name="padding_bottom_count_date">10dp</dimen>
+    <dimen name="margin_top_date_fragment2">30dp</dimen>
+    <dimen name="margin_left_right_text_date">10dp</dimen>
+</resources>
