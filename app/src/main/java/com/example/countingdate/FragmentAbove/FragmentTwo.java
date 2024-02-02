@@ -64,7 +64,7 @@ public class FragmentTwo extends Fragment {
         }, 1000);
     }
     public void calculatorTime(){
-        int[] arrDate = sendDataFragmentActi.getFragmentTime();
+        int[] arrDate = sendDataFragmentActi.getFragmentTime(null);
         txtYear.setText(String.valueOf(arrDate[0]));
         txtMonth.setText(String.valueOf(arrDate[1]));
         txtWeek.setText(String.valueOf(arrDate[2]));

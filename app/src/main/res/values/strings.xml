@@ -24,4 +24,37 @@
     <string name="name_mask">Khung ảnh đại diện</string>
     <string name="cancel">Hủy</string>
     <string name="accept">Ok</string>
+    <string name="s1mple_love">S1mple Love</string>
+    <string name="username_1">username 1</string>
+    <string name="username_2">username 2</string>
+    <string name="choose_color">Chọn màu yêu thích</string>
+    <string name="save_memory">Lưu giữ kỷ niệm</string>
+
+    <string-array name="zodicac">
+        <item>ma kết</item>
+        <item>bảo bình</item>
+        <item>song ngư</item>
+        <item>bạch dương</item>
+        <item>kim ngưu</item>
+        <item>song tử</item>
+        <item>cự giải</item>
+        <item>sư tử</item>
+        <item>xử nữ</item>
+        <item>thiên bình</item>
+        <item>bọ cạp</item>
+        <item>nhân mã</item>
+    </string-array>
+
+    <string-array name="themeColors">
+        <item>#f6e58d</item>
+        <item>#ffbe76</item>
+        <item>#ff7979</item>
+        <item>#badc58</item>
+        <item>#dff9fb</item>
+        <item>#7ed6df</item>
+        <item>#e056fd</item>
+        <item>#686de0</item>
+        <item>#30336b</item>
+        <item>#95afc0</item>
+    </string-array>
 </resources>

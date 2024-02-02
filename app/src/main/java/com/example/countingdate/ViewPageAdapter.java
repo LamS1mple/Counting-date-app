@@ -1,4 +1,4 @@
-package com.example.countingdate.FragmentAbove;
+package com.example.countingdate;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -30,6 +30,8 @@ public class ViewPageAdapter extends FragmentStateAdapter {
 
     @Override
     public int getItemCount() {
-        return 2;
+        return 3;
     }
+
+
 }

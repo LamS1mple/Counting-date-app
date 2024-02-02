@@ -47,5 +47,25 @@ dependencies {
     implementation 'com.github.BharathKSunil:MultiWaveHeader:v1.0.0-alpha-4'
     implementation 'com.google.code.gson:gson:2.10.1'
 
+    implementation("com.tbuonomo:dotsindicator:5.0")
+
+    implementation 'com.github.Dhaval2404:ColorPicker:2.3'
+
+
+
+
+    def room_version = "2.6.1"
+
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+
+    // optional - RxJava2 support for Room
+    implementation "androidx.room:room-rxjava2:$room_version"
+
+    // optional - RxJava3 support for Room
+    implementation "androidx.room:room-rxjava3:$room_version"
+
+    implementation 'com.wdullaer:materialdatetimepicker:4.2.3'
+
 
 }

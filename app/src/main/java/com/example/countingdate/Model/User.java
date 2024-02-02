@@ -13,6 +13,9 @@ public class User {
     private int mask;
     private Calendar date;
 
+    private int colorAge;
+    private int colorZo;
+
     public User() {
     }
 
@@ -22,6 +25,32 @@ public class User {
         this.imgUser = imgUser;
         this.mask = mask;
         this.date = date;
+    }
+
+    public User(String name, boolean sex, String imgUser, int mask, Calendar date, int colorAge, int colorZo) {
+        this.name = name;
+        this.sex = sex;
+        this.imgUser = imgUser;
+        this.mask = mask;
+        this.date = date;
+        this.colorAge = colorAge;
+        this.colorZo = colorZo;
+    }
+
+    public int getColorAge() {
+        return colorAge;
+    }
+
+    public void setColorAge(int colorAge) {
+        this.colorAge = colorAge;
+    }
+
+    public int getColorZo() {
+        return colorZo;
+    }
+
+    public void setColorZo(int colorZo) {
+        this.colorZo = colorZo;
     }
 
     public Uri getUri(){
@@ -66,5 +95,13 @@ public class User {
 
     public void setDate(Calendar date) {
         this.date = date;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "colorAge=" + colorAge +
+                ", colorZo=" + colorZo +
+                '}';
     }
 }

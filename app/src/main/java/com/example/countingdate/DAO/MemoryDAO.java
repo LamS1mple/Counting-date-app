@@ -9,8 +9,8 @@ import com.example.countingdate.Model.Memory;
 import java.util.List;
 
 @Dao
-public class MemoryDAO
+public interface MemoryDAO
 {
     @Query("Select * from memory")
-    List<Memory> getAllMemory;
+    List<Memory> getAllMemory();
 }

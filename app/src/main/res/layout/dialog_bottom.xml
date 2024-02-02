@@ -48,6 +48,13 @@
     <TextView
         android:layout_marginTop="@dimen/size_margin_dialog_center"
         android:textSize="@dimen/text_size_fragment2"
+        android:id="@+id/change_color_background_zo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Đổi màu nền cung hoàng đạo"/>
+    <TextView
+        android:layout_marginTop="@dimen/size_margin_dialog_center"
+        android:textSize="@dimen/text_size_fragment2"
         android:id="@+id/change_color_background_sex"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

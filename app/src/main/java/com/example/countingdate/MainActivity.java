@@ -3,19 +3,23 @@ package com.example.countingdate;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Window;
-import android.view.WindowManager;
+import android.view.MotionEvent;
+import android.view.View;
 import android.widget.ImageView;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
 
-import com.example.countingdate.FragmentAbove.ViewPageAdapter;
 import com.example.countingdate.FragmentBottom.ViewPageBottomAdapter;
+import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.tabs.TabLayoutMediator;
 import com.squareup.picasso.Picasso;
 import com.yalantis.ucrop.UCrop;
 
@@ -25,10 +29,10 @@ import java.util.UUID;
 
 
 public class MainActivity extends AppCompatActivity implements SendDataFragmentOneActi {
-    ViewPager2 viewPager2, viewPager2Bottom;
+    ViewPager2 viewPager2Main;
     ViewPageAdapter viewPageAdapter;
-    ViewPageBottomAdapter viewPageAdapterBottom;
 
+    TabLayout tabLayoutMain;
     Calendar dateSelected ;
 
     SharedPreferences sharedPreferences;
@@ -38,18 +42,37 @@ public class MainActivity extends AppCompatActivity implements SendDataFragmentO
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN );
         setContentView(R.layout.activity_main);
         mappingView();
 
         viewPageAdapter = new ViewPageAdapter(this);
-        viewPageAdapterBottom = new ViewPageBottomAdapter(this);
-        viewPager2.setAdapter(viewPageAdapter);
-        viewPager2Bottom.setAdapter(viewPageAdapterBottom);
+        viewPager2Main.setAdapter(viewPageAdapter);
+        viewPager2Main.setCurrentItem(1);
+
+
+        new TabLayoutMediator(tabLayoutMain, viewPager2Main, new TabLayoutMediator.TabConfigurationStrategy() {
+            @Override
+            public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {
+                if (position == 0){
+                    tab.setIcon(R.drawable.history);
+                }
+                if (position == 2){
+                    tab.setIcon(R.drawable.setting);
+                }
+                if (position == 1){
+                    tab.setText(getResources().getText(R.string.s1mple_love));
+                }
+            }
+        }).attach();
+
 
         setDate();
         setImg();
 
+   }
+
+   public void setEnableViewPager2(boolean check){
+        viewPager2Main.setUserInputEnabled(check);
    }
 
 
@@ -58,8 +81,8 @@ public class MainActivity extends AppCompatActivity implements SendDataFragmentO
         sharedPreferences = this.getPreferences(Context.MODE_PRIVATE);
         editor = sharedPreferences.edit();
         backGroundAc = findViewById(R.id.backGroundAc);
-        viewPager2Bottom = findViewById(R.id.view_page2_bottom);
-        viewPager2 = findViewById(R.id.view_page2);
+        viewPager2Main = findViewById(R.id.view_page2_main);
+        tabLayoutMain = findViewById(R.id.tabLayout);
     }
 
 
@@ -92,8 +115,14 @@ public class MainActivity extends AppCompatActivity implements SendDataFragmentO
     private void setImg(){
         String imgBackground = sharedPreferences.getString("imgBackground", null);
         if (imgBackground != null){
-            Log.d("img", imgBackground);
-            backGroundAc.setImageURI(Uri.parse(imgBackground));
+            Picasso.get()
+                    .load(imgBackground)
+                    .into(backGroundAc);
+        }
+        else{
+            Picasso.get()
+                    .load(R.drawable.back1)
+                    .into(backGroundAc);
         }
     }
     @Override
@@ -124,6 +153,8 @@ public class MainActivity extends AppCompatActivity implements SendDataFragmentO
         }
     }
 
+
+
     @Override
     public long getSecondWithCurrent() {
 
@@ -133,7 +164,10 @@ public class MainActivity extends AppCompatActivity implements SendDataFragmentO
     }
 
     @Override
-    public int[] getFragmentTime() {
+    public int[] getFragmentTime(Calendar dateSelected) {
+        if (dateSelected == null){
+            dateSelected = this.dateSelected;
+        }
         int[] arrdate = new int[7];
         Calendar current = Calendar.getInstance();
         int year , monthOfYear, weekOfMonth, dayOfWeek;

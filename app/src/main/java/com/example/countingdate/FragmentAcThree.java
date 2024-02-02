@@ -1,2 +1,6 @@
-package com.example.countingdate;public class FragmentAcThree {
+package com.example.countingdate;
+
+import androidx.fragment.app.Fragment;
+
+public class FragmentAcThree extends Fragment {
 }

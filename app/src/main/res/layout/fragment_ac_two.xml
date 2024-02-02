@@ -1,6 +1,218 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_page2_fra"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/view_bottom" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator
+        android:id="@+id/dots_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view_bottom"
+        android:layout_centerHorizontal="true"
+        app:dotsColor="@color/color_dialog_inout"
+        app:dotsStrokeColor="@color/white"
+        app:progressMode="true" />
+    <com.scwang.wave.MultiWaveHeader
+        android:id="@+id/waveHeader"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleY="-1"
+        app:mwhCloseColor="@color/wave"
+        app:mwhColorAlpha="0.6"
+        android:layout_alignParentBottom="true"
+        app:mwhGradientAngle="45"
+        app:mwhProgress="1"
+        app:mwhStartColor="@color/wave"
+        app:mwhVelocity="2"
+        app:mwhWaveHeight="50dp"
+        app:mwhWaves="PairWave" />
+    <LinearLayout
+        android:id="@+id/view_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" android:orientation="horizontal"
+        android:padding="20dp"
+        android:weightSum="9">
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="@dimen/size_img"
+                android:layout_height="@dimen/size_img"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/avatar1" />
+
+            <TextView
+                android:id="@+id/name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:maxWidth="100dp"
+                android:text="@string/username_1"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin_age_singe"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/age_background_user1"
+                    android:layout_marginRight="@dimen/margin_age_singe"
+                    android:orientation="horizontal"
+                    android:background="@drawable/boder_background"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+
+                        android:id="@+id/sex_user1"
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/female" />
+                    <TextView
+                        android:textSize="@dimen/text_size_Zo"
+                        android:textColor="@color/white"
+                        android:id="@+id/age_user1"
+                        android:layout_marginStart="@dimen/margin_sex"
+                        android:text="20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/zo_background_color1"
+                    android:layout_marginStart="@dimen/margin_age_singe"
+                    android:background="@drawable/boder_background"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/sign_img_user1"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ma_ket"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"/>
+                    <TextView
+                        android:textSize="@dimen/text_size_Zo"
+                        android:textColor="@color/white"
+                        android:id="@+id/sign_name_user1"
+                        android:layout_marginStart="@dimen/margin_sex"
+                        android:text="bạch dương"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/icon_ani"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+
+            android:src="@drawable/heart" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/avatar2" />
+
+            <TextView
+                android:id="@+id/name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:maxWidth="100dp"
+                android:text="@string/username_2"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin_age_singe"
+
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/age_background_user2"
+
+                    android:layout_marginEnd="@dimen/margin_age_singe"
+                    android:orientation="horizontal"
+                    android:background="@drawable/boder_background"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/sex_user2"
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/male" />
+                    <TextView
+                        android:textSize="@dimen/text_size_Zo"
+                        android:textColor="@color/white"
+                        android:id="@+id/age_user2"
+                        android:layout_marginStart="@dimen/margin_sex"
+                        android:text="20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/zo_background_color_2"
+                    android:layout_marginStart="@dimen/margin_age_singe"
+                    android:background="@drawable/boder_background"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/sign_img_user2"
+                        android:layout_gravity="center"
+                        android:src="@drawable/xu_nu"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"/>
+                    <TextView
+                        android:textSize="@dimen/text_size_Zo"
+                        android:textColor="@color/white"
+                        android:id="@+id/sign_name_user2"
+                        android:layout_marginLeft="@dimen/margin_sex"
+                        android:text="xử nữ"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

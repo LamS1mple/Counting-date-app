@@ -10,4 +10,7 @@
     <dimen name="padding_bottom_count_date">10dp</dimen>
     <dimen name="margin_top_date_fragment2">30dp</dimen>
     <dimen name="margin_left_right_text_date">10dp</dimen>
+    <dimen name="margin_age_singe">5dp</dimen>
+    <dimen name="margin_sex">5dp</dimen>
+    <dimen name="text_size_Zo">13dp</dimen>
 </resources>

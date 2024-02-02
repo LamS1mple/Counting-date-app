@@ -3,12 +3,19 @@
     <style name="Base.Theme.CountingDate" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+<!--        <item name="android:datePickerDialogTheme">@style/App.Dialog.DateTime</item>-->
+
     </style>
 
     <style name="Theme.CountingDate" parent="Base.Theme.CountingDate" >
         <item name="android:statusBarColor">@color/backGround_fagment2</item>
+        <item name="android:datePickerStyle">@style/MyDatePicker</item>
 
         <item name="windowActionBarOverlay">true</item>
         <item name="android:windowActionBarOverlay">true</item>
+    </style>
+    <style name="MyDatePicker" parent="android:Widget.Material.Light.DatePicker">
+        <item name="android:datePickerMode">spinner</item>
+
     </style>
 </resources>
