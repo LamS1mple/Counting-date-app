@@ -12,4 +12,6 @@
     <color name="clPrimary">#DDC000</color>
     <color name="clAccent">#BFAF40</color>
     <color name="clAccentRipple">#6C6112</color>
+    <color name="in_activity">#DDDDDD</color>
+    <color name="color_text_save">#01BC64</color>
 </resources>

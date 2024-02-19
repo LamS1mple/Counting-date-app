@@ -6,16 +6,47 @@ import androidx.room.PrimaryKey;
 
 import java.util.Date;
 
+
 @Entity
 public class Memory {
 
     @PrimaryKey(autoGenerate = true)
-    public int id;
+    private long memoryId;
 
 
-    @ColumnInfo(name = "title")
-    public String title;
-//    @ColumnInfo(name = "date")
-//    public Date date;
+    private String title;
+    private Date date;
 
+    public long getMemoryId() {
+        return memoryId;
+    }
+
+    public void setMemoryId(long memoryId) {
+        this.memoryId = memoryId;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    @Override
+    public String toString() {
+        return "Memory{" +
+                "memoryId=" + memoryId +
+                ", title='" + title + '\'' +
+                ", date=" + date +
+                '}';
+    }
 }

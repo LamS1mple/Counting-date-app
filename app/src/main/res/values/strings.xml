@@ -29,7 +29,16 @@
     <string name="username_2">username 2</string>
     <string name="choose_color">Chọn màu yêu thích</string>
     <string name="save_memory">Lưu giữ kỷ niệm</string>
+    <string name="save">Lưu</string>
+    <string name="select_date">chọn ngày</string>
+    <string name="content_memory">nội dung</string>
 
+    <string name="rationale_message">We need permission to take photos and choose photos</string>
+    <string name="confirm_delete">Bạn chắc chắn muốn xóa không?</string>
+    <string name="yes">Có</string>
+    <string name="no">Không</string>
+    <string name="select">Chọn</string>
+    <string name="choose_image">Chọn ảnh</string>
     <string-array name="zodicac">
         <item>ma kết</item>
         <item>bảo bình</item>

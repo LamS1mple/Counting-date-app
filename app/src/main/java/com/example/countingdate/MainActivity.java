@@ -49,7 +49,6 @@ public class MainActivity extends AppCompatActivity implements SendDataFragmentO
         viewPager2Main.setAdapter(viewPageAdapter);
         viewPager2Main.setCurrentItem(1);
 
-
         new TabLayoutMediator(tabLayoutMain, viewPager2Main, new TabLayoutMediator.TabConfigurationStrategy() {
             @Override
             public void onConfigureTab(@NonNull TabLayout.Tab tab, int position) {
